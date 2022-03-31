@@ -3,4 +3,4 @@ let admin;
 
 admin = name
 
-alert(name)
+console.log(name)
