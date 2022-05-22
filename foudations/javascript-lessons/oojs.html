@@ -24,5 +24,27 @@
           console.log(`Hi! I'm ${this.name[0]}.`);
         }
       };
+
+      person.age = 45;
+      person['name']['last'] = 'Cratchit';
+      person['eyes'] = 'hazel';
+      person.farewell = function(){
+        console.log('Bye everybody!');
+      }
+
+      const myDataName = 'height';
+      const myDataValue = '1.75m';
+
+      person[myDataName] = myDataValue;
+
+      function Person(name){
+        this.name = name;
+        this.introduceSelf = function(){
+          console.log(`Hi! I'm ${this.name}.`);
+        }
+      }
+
+      const salva = new Person('Salva');
+      const frankie = new Person('Frankie');
     </script>
 </html>
